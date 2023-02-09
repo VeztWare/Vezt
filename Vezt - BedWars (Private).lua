@@ -16,7 +16,8 @@ local Tab5 = window:NewTab("World")
 local Tab5Section = Tab5:NewSection("World Settings")
 local Tab6 = window:NewTab("Auto Shop")
 local Tab6Section = Tab6:NewSection("AutoBuy Armor")
----Buttons
+---Info Section
+Tab1Section:NewLabel("Hello " ..player.DisplayName.. " !"
 Tab2Section:NewToggle("KillAura","?",function()
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "Vezt"; Text = "KillAura Enabled"; Duration = 1; })
 local player = game:GetService("Players")
