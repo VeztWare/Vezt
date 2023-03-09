@@ -1,10 +1,9 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IloveHackingForEver/Vezt/main/ChatTags.lua"))()
---MODULES
+--KavoUI
 local player = game.Players.LocalPlayer
 ---@Sounds
- local sound = Instance.new("Sound") sound.Parent = workspace sound.SoundId = "rbxassetid://2389339814" sound:Play()
-local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/dBNP91B2"))()
-local window = kavoUi.CreateLib("Vezt(Private)","Vezt")
+ local sound = Instance.new("Sound") sound.Parent = workspace sound.SoundId = "rbxassetid://1570675466" sound:Play()
+local kavoUi = loadstring(game:HttpGet("https://raw.githubusercontent.com/VeztWare/KavoUi/main/KavoUi.lua"))()
+local window = kavoUi.CreateLib("Vezt(Private)","VeztPur")
 ---Tabs
 local Tab1 = window:NewTab("Info")
 local Tab1Section = Tab1:NewSection("Vezt Project")
@@ -49,7 +48,7 @@ game:GetService("RunService").Stepped:connect(function()
 Aura()
 end)
 end)
-Tab2Section:NewSlider("Killaura Distance", "?", 500, 14, function(s)
+Tab2Section:NewSlider("Killaura Distance", "?", 25,50, function(s)
     _G.Distance = s
 end)
 Tab2Section:NewLabel("Sword Things")
@@ -60,7 +59,7 @@ getgenv().funisus = v
             if getgenv().funisus and entity.isAlive then
                 for i2,v2 in pairs(itemtable) do
                     if type(v2) == "table" and rawget(v2, "sword") then
-                        v2.sword.attackSpeed = 0.000000001
+                        v2.sword.attackSpeed = 0.00000000000000000000000000000001
                     end
                     SwordCont.isClickingTooFast = function() return false end
                 end
@@ -363,7 +362,7 @@ game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("
 end
 end
 end)
-Tab3Section:NewButton("Cape","?",function()
+Tab4Section:NewButton("Cape","?",function()
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "Vezt"; Text = "Cape XD"; Duration = 1; })
 local player = game:GetService("Players")
 local lplr = player.LocalPlayer
@@ -444,7 +443,7 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end
 end
 end)
-Tab3Section:NewToggle("ChatSpammer", "?", function(state) 
+Tab4Section:NewToggle("ChatSpammer", "?", function(state) 
 if state then
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "Vezt"; Text = "ChatSpammer Enabled"; Duration = 1; })
 _G.Spam = true
@@ -473,7 +472,7 @@ Tab3Section:NewButton("inf jump","?",function()
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "Vezt"; Text = "You Cant Disable Inf Jump"; Duration = 1; })
 loadstring(game:HttpGet("https://pastebin.com/raw/bC97eAyR", true))()
 end)
-Tab3Section:NewButton("AutoToxic","?",function()
+Tab4Section:NewButton("AutoToxic","?",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/044yS1wu"))()
 wait(0.1)
 loadstring(game:HttpGet("https://pastebin.com/raw/h2hAFDR5"))()
@@ -552,13 +551,7 @@ for _,v in pairs( game.Players:GetPlayers()) do
 					if v.Character.Humanoid.WalkSpeed > 23 then
 game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Vezt - AntiCheat",
-        Text = "⚠️Speed Is Higher Than 23⚠️",
-        Duration = 5,
-        Icon = 'rbxassetid://12623442578'
-   })
-game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Vezt - AntiCheat",
-        Text = "⚠️Slowing Down Speed To 23⚠️",
+        Text = "High Speed Detected Slowing Speed to 23",
         Duration = 5,
         Icon = 'rbxassetid://12623478467'
    })
@@ -566,5 +559,13 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
    end
    end
    end
-        end
+   end
+end)
+Tab3Section:NewButton("Reach","?",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/QWZX3uW9"))()
+end)
+Tab3Section:NewButton("No Fall Damage","?",function()
+while wait() do
+game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.GroundHit:FireServer()
+end
 end)
