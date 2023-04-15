@@ -4,5 +4,5 @@
 ### Im A Scripter ONLY
 
 ```
-Lua
+Lua/Luau
 ```
