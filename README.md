@@ -8,5 +8,5 @@ Lua/Luau
 ```
 ## Vezt - Bedwars
 ```
-loadstring(game:HttpGet("https://raw.githubusercontent.com/VeztWare/Vezt/main/Vezt%20V3.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VeztWare/Vezt/main/Vezt - BedWars.lua"))()
 ```
