@@ -11,7 +11,10 @@ local Info = InfoTab:NewSection("Made By IamHamzaBG#6137")
 Info:NewLabel("+ Added Lobby Check (AutoWin)")
 Info:NewLabel("+ Added AntiAFK (Built-in)")
 local MainTab = window:NewTab("Main")
-local Main = MainTab:NewSection("Time Passed: ")
+local Main = MainTab:NewSection("Have Fun.")
+for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
+  v:Disable()
+end
 --Would Be Repectable if you give me credits to this function.
 function CheckLobby()
 for i,v in pairs(workspace:GetDescendants()) do
