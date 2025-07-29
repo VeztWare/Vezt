@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick("Vuln exists rn, please wait till i fix it")
+game.Players.LocalPlayer:Kick("please do not use the script for now, it has been detected due to being too good. a fix will be sent soon")
