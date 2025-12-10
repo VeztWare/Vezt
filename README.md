@@ -1,4 +1,4 @@
-Disclaimer ⚠️
-This project is for educational purposes only. The author is not responsible for any misuse in games.
-
-This repository includes Lua Code for games like Monday Morning Misery, BreakIn, Friday Night Partying, and others. Enjoy!
+Goodbye.
+This Project has been archived. thank you for the support, thank you for everything, for every challenge and every game i spent hours making code for.
+im sorry to anyone who i may have hurt or doxxed in the past.
+i will still continue scripting on different games, but this time the code will be open source if its not neccessary or obfuscate it, thanks again
